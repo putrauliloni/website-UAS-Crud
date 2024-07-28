@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Mahasiswa</title>
+    <link rel="stylesheet" href="SA.css">
+</head>
+<body>
+    <div id="crud-container">
+        <h2>CRUD Data Mahasiswa</h2>
+        <form id="mahasiswa-form">
+            <input type="hidden" id="edit-index">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" required>
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" required>
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" required>
+                <option value="Akuntansi">Akuntansi</option>
+                <option value="Pariwisata">Pariwisata</option>
+                <option value="Bisnis">Bisnis</option>
+                <option value="Elektro">Elektro</option>
+                <option value="Sipil">Sipil</option>
+            </select>
+            <label for="prodi">Prodi:</label>
+            <select id="prodi" required>
+                <!-- Opsi akan diubah berdasarkan pilihan jurusan -->
+            </select>
+            <button type="submit">Simpan</button>
+        </form>
+        <table id="mahasiswa-table">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Alamat</th>
+                    <th>Jurusan</th>
+                    <th>Prodi</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data mahasiswa akan muncul di sini -->
+            </tbody>
+        </table>
+        <a href="SA.html">Logout</a>
+    </div>
+    <script src="SA.js"></script>
+</body>
+</html>
